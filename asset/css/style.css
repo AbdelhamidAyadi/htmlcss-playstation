@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 .sony_logo{
     height: 30px;
     background-color: black;
@@ -10,6 +13,25 @@
     height: 30px ; 
     margin: auto 0;
 }
+.menu{
+    position: relative;
+}
+.dropdown_content_menu{
+    margin-top: 50px;
+    padding: 20px;
+    position: absolute;
+    display: none;
+    width: 100vw;
+    right: 0;
+    background-color: #F8F9FA;
+    
+}
+
+
+.menu_father:hover + .dropdown_content_menu{
+    display: block;
+
+}
 .first_section{
     min-height: 80vh;
     background-image: url('../img/jumbo-bg.png');
@@ -20,6 +42,9 @@
 }
 .opacity_filter{
     filter: opacity(0.5);
+}
+.opacity_filter:hover{
+    filter: none;
 }
 .second_section{
     min-height: 80vh;
@@ -46,4 +71,22 @@
 }
 .globe_footer{
     height: 24px;
+}
+
+.img_hover_effect{
+    transition: margin 0.5s;
+}
+
+.img_hover_effect:hover{
+    padding: 5px;
+    box-shadow: 0px 0px 5px 5px inset white;
+    border: 5px solid #3c93da ;
+    border-radius: 10px;
+    margin-top: -10px;
+}
+.btn_hover_effect:hover{
+    padding: 10px;
+    box-shadow: 0px 0px 2px 5px inset white;
+    border: 3px solid #3c93da ;
+    border-radius: 10px;
 }
